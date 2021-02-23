@@ -1,0 +1,13 @@
+diff --git a/setup.py b/setup.py
+index f5648c8..5a14857 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,8 +1,6 @@
+ """
+ Various Python tools for OpenMM.
+ """
+-import distutils.extension
+-from Cython.Build import cythonize
+ 
+ import sys
+ from setuptools import setup, find_packages
