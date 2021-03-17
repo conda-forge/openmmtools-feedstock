@@ -13,34 +13,32 @@ build:
   number: 0
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv --no-deps
+  noarch: python
   entry_points:
     - test-openmm-platforms = openmmtools.scripts.test_openmm_platforms:main
     - benchmark-alchemy = openmmtools.tests.test_alchemy:benchmark_alchemy_from_pdb
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - cython
   run:
     - python
     - numpy >=1.14
     - scipy
     - openmm >=7.3.1
     - setuptools
-    - jinja2
     - six
     - ambertools
     - mdtraj
     - netcdf4 >=1.4.2
     - libnetcdf >=4.6.2
     - mpiplus
-    - cython
     - pyyaml
     - pymbar
+    - numba
     - nose
+    - pdbfixer
 
 test:
   imports:
