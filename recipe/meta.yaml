@@ -29,8 +29,8 @@ requirements:
     - openmm >=7.3.1
     - setuptools
     - six
-    - ambertools
     - mdtraj
+    - pandas
     - netcdf4 >=1.4.2
     - libnetcdf >=4.6.2
     - mpiplus
