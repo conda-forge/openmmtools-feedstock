@@ -1,5 +1,5 @@
 {% set name = "openmmtools" %}
-{% set version = "0.20.1" %}
+{% set version = "0.20.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: e6395de44822aa82c365cc0b71ad37e1ff60ad3cca4d73da13ea6958fa4bcbaa
+  sha256: b720c0a1beda8344a26fb30a845fce9965da660ed47495385c91b0780feae96d
 
 build:
   number: 0
@@ -21,14 +21,12 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - cython
   run:
     - python >=3.6
     - numpy >=1.14
     - scipy
     - openmm >=7.3.1
     - setuptools
-    - six
     - mdtraj
     - pandas
     - netcdf4 >=1.4.2
