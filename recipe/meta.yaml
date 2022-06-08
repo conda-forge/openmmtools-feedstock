@@ -19,24 +19,24 @@ build:
 
 requirements:
   host:
-    - python >=3.6
     - pip
-  run:
     - python >=3.6
-    - numpy >=1.14
-    - scipy
-    - openmm >=7.3.1
-    - setuptools
-    - mdtraj
-    - pandas
-    - netcdf4 >=1.4.2
+  run:
     - libnetcdf >=4.6.2
+    - mdtraj
     - mpiplus
-    - pyyaml
-    - pymbar
-    - numba
+    - netcdf4 >=1.4.2
     - nose
+    - numba
+    - numpy >=1.14
+    - openmm >=7.3.1
+    - pandas
     - pdbfixer
+    - pymbar
+    - python >=3.6
+    - pyyaml
+    - scipy
+    - setuptools
 
 test:
   imports:
