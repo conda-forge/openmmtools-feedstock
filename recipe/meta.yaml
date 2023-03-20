@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: 52afaed4b6eca39c95487f9ba30d9106eda0efecb5cafb85d9a2fa6209e518cf
+  sha256: f0ec7e5b91e2cfb085d8db3fdfd5f2895516d79aa37542bce12828346b700772
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
   entry_points:
@@ -22,10 +22,11 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - hdf5 =1.12.*
     - libnetcdf >=4.6.2
     - mdtraj
     - mpiplus
-    - netcdf4 >=1.4.2
+    - netcdf4 =1.5.*
     - nose
     - numba
     - numpy >=1.14
