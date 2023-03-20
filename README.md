@@ -1,11 +1,11 @@
-About openmmtools
-=================
+About openmmtools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmmtools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/choderalab/openmmtools
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmmtools-feedstock/blob/main/LICENSE.txt)
 
 Summary: A batteries-included toolkit for the GPU-accelerated OpenMM molecular simulation engine.
 
