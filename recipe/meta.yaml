@@ -22,6 +22,7 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - hdf5 =1.12.*
     - libnetcdf >=4.6.2
     - mdtraj
     - mpiplus
