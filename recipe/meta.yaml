@@ -30,7 +30,7 @@ requirements:
     - nose
     - numba
     - numpy >=1.14
-    - openmm >=7.3.1
+    - openmm >=7.7
     - pandas
     - pdbfixer
     - pymbar
