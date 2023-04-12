@@ -26,7 +26,7 @@ requirements:
     - libnetcdf >=4.6.2
     - mdtraj
     - mpiplus
-    - netcdf4 =1.5.*
+    - netcdf4 >=1.5
     - nose
     - numba
     - numpy >=1.14
