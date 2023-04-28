@@ -10,7 +10,7 @@ source:
   sha256: f2d7803e403ff2362be68007b3965f2204bb00d42573ba79f83fca9b25074068
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
   entry_points:
@@ -33,7 +33,7 @@ requirements:
     - openmm >=7.3.1
     - pandas
     - pdbfixer
-    - pymbar <4
+    - pymbar
     - python >=3.6
     - pyyaml
     - scipy
