@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  git_rev: 0.22.2
+  git_rev: 252ec6203c979f9714f62845aa77f277be0efc9e
 
 build:
   number: 0
