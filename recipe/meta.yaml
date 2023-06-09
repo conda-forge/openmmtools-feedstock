@@ -10,7 +10,7 @@ source:
   git_rev: 252ec6203c979f9714f62845aa77f277be0efc9e
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   noarch: python
   entry_points:
