@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: f2d7803e403ff2362be68007b3965f2204bb00d42573ba79f83fca9b25074068
+  sha256: c9cd0998e997dc2931756899ff23e8476cf58ac15c184ac0774f65afd3c9a1c3
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - hdf5 !=1.14.0
+    - hdf5
     - libnetcdf >=4.6.2
     - mdtraj
     - mpiplus
