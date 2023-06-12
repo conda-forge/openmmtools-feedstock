@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: 262179f8a61261c4e24abafd71cf08ac376bc38d3d8615fbb11c51dbc31dd17e
+  sha256: 3abf039d0eac61da72f0bed60fff00001a2a6b6075520d9212ba86d8758de9fe
 
 build:
   number: 0
