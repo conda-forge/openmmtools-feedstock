@@ -43,6 +43,7 @@ test:
   requires:
     - python {{ python_min }}
     - pytest
+    - requests
   imports:
     - openmmtools
   commands:
