@@ -1,5 +1,5 @@
 {% set name = "openmmtools" %}
-{% set version = "0.23.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: 8f14fafa93b91094793d6c2672e3382e2350083dfb79f264e56eccf38ed9a74c
+  sha256: 452c0484c98603a21c9f05f50650829678c45457086cedd2a7c1da3846c06e34
 
 build:
   number: 0
@@ -20,29 +20,34 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
   run:
     - hdf5
     - libnetcdf >=4.6.2
     - mdtraj
     - mpiplus
     - netcdf4 >=1.5
-    - nose
     - numba
     - numpy >=1.14
     - openmm >=7.3.1
     - pandas
     - pdbfixer
     - pymbar
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml
     - scipy
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pytest
+    - requests
   imports:
     - openmmtools
   commands:
+    - pytest --pyargs openmmtools
     - test-openmm-platforms --help
     - benchmark-alchemy --help
 
