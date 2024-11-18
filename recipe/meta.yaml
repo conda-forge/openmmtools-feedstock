@@ -1,5 +1,5 @@
 {% set name = "openmmtools" %}
-{% set version = "0.23.1" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,6 @@ requirements:
     - mdtraj
     - mpiplus
     - netcdf4 >=1.5
-    - nose
     - numba
     - numpy >=1.14
     - openmm >=7.3.1
@@ -40,9 +39,12 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - pytest
   imports:
     - openmmtools
   commands:
+    - pytest --pyargs openmmtools
     - test-openmm-platforms --help
     - benchmark-alchemy --help
 
