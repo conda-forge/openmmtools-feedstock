@@ -1,5 +1,5 @@
 {% set name = "openmmtools" %}
-{% set version = "0.24.0" %}
+{% set version = "0.24.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: 452c0484c98603a21c9f05f50650829678c45457086cedd2a7c1da3846c06e34
+  sha256: a0eb46b70b0552df7134f70e244fc0a1a2093c4d33b660a42b28f2589459c209
 
 build:
   number: 0
