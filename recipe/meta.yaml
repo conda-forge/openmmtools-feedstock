@@ -44,6 +44,7 @@ test:
     - python {{ python_min }}
     - pytest
     - requests
+    - coverage
   imports:
     - openmmtools
   commands:
