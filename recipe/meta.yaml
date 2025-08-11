@@ -36,7 +36,7 @@ requirements:
     - pymbar
     - python >={{ python_min }}
     - pyyaml
-    - scipy
+    - scipy  >=1.15.0
     - setuptools
 
 test:
