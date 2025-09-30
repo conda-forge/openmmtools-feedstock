@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/{{ version }}.tar.gz
-  sha256: 27a5765aa69ff7468480e5d8e838e65c29f54e7553e0216b3428939ec1080022
+  sha256: 2f5c5e89d47219a0f78cd0a252593b34575c997f27269c365dc319078a8bcdb1
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - mpiplus
     - netcdf4 >=1.5
     - numba
-    - numpy
+    - numpy >1.9
     - openmm >=7.3.1
     - pandas
     - pdbfixer
