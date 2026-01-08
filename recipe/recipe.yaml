@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: openmmtools
-  version: 0.25.3
-  python_min: 3.10
+  version: 0.26.0
+  python_min: 3.11
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/choderalab/openmmtools/archive/${{ version }}.tar.gz
-  sha256: 65bc70d1932e49ecadf8b2a1b33555a4d44420fdc808fa15e1d08bb874071f81
+  sha256: 206c419562153edcd50f2de44a5201c56996080232a47ce05dfc16827702f001
 
 build:
   number: 1
