@@ -11,11 +11,10 @@ Summary: A batteries-included toolkit for the GPU-accelerated OpenMM molecular s
 
 Development: https://github.com/choderalab/openmmtools
 
-Documentation: https://openmmtools.readthedocs.io
+Documentation: https://openmmtools.readthedocs.io/
 
 openmmtools is a Python library layer that sits on top of OpenMM to provide access
 to a variety of useful tools for building full-featured molecular simulation packages.
-
 
 Current build status
 ====================
