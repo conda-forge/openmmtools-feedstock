@@ -10,8 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/choderalab/openmmtools/archive/${{ version }}.tar.gz
-  sha256: d128bcfd300e87bd548657c875202569d16ff80dc4460e4bebaf7c7630c8be39
+  url: https://pypi.org/packages/source/o/openmmtools/openmmtools-${{ version }}.tar.gz
+  sha256: 98423dfea085a0cef15b197a94652aac34a9cb46acb90e66cabfd8a37b726f5b
 
 build:
   number: 0
