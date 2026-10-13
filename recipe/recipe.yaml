@@ -2,19 +2,18 @@ schema_version: 1
 
 context:
   name: openmmtools
-  version: 0.26.0
-  python_min: 3.11
+  version: "0.27.0"
 
 package:
-  name: ${{ name|lower }}
+  name: openmmtools
   version: ${{ version }}
 
 source:
-  url: https://github.com/choderalab/openmmtools/archive/${{ version }}.tar.gz
-  sha256: 206c419562153edcd50f2de44a5201c56996080232a47ce05dfc16827702f001
+  url: https://pypi.org/packages/source/o/openmmtools/openmmtools-${{ version }}.tar.gz
+  sha256: 98423dfea085a0cef15b197a94652aac34a9cb46acb90e66cabfd8a37b726f5b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps
   python:
@@ -49,7 +48,9 @@ tests:
       imports:
         - openmmtools
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
